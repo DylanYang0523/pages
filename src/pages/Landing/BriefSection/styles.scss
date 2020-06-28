@@ -1,0 +1,64 @@
+@import '~src/styles/_mixins.scss';
+
+.brief-outer-container {
+    @include outer-container;
+    height: 620px;
+    justify-content: center;
+}
+.brief-inner-container {
+    @include inner-container;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    .layer-top {
+        position: relative;
+        z-index: 2;
+    }
+    .profile-wrapper {
+        img {
+            width: 350px;
+        }
+    }
+    .info-wrapper {
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 44px;
+        position: relative;
+        .desc {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        .resume {
+            font-weight: 900;
+            position: absolute;
+            top: 190px;
+            &::after {
+                content: '';
+                border: 2px solid blue;
+                width: 100px;
+                display: block;
+                top: -1px;
+                position: relative;
+                left: 17px;
+            
+            }
+        }
+    }
+    .square-y {
+        width: 400px;
+        height: 209px;
+        position: absolute;
+        border: 8px solid yellow;
+        right: 105px;
+        top: -30px;
+    }
+    .square-g {
+        width: 130px;
+        height: 168px;
+        position: absolute;
+        border: 8px solid rgb(85, 255, 106);
+        right: 60px;
+        top: 70px;
+    }
+}

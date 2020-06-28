@@ -1,15 +1,17 @@
 import React from 'react';
 import 'normalize.css';
-import '/styles/global.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from '/components/Footer';
-import Landing from './Landing';
+import './styles.scss';
+import Header from 'my-components/Header';
+import Footer from 'my-components/Footer';
+import Landing from 'my-pages/Landing';
 
 const App = () => {
   return (
     <div>
+      <Header />
       <Landing />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

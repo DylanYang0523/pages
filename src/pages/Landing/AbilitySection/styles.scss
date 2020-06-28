@@ -1,0 +1,31 @@
+@import '~src/styles/_mixins.scss';
+
+.ability-outer-container {
+    @include outer-container;
+    margin-bottom: 70px;
+}
+.ability-inner-container {
+    @include inner-container;
+    h2 {
+        letter-spacing: .5px;
+        position: relative;
+        font-weight: 800;
+        &::after {
+            content: "";
+            width: 118px;
+            border: 4px solid purple;
+            display: block;
+            position: absolute;
+            bottom: 3px;
+            opacity: 0.5;
+            left: 10px;
+        }
+    }
+    .title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    label {
+        margin-bottom: 1px;
+    }
+}

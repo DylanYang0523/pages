@@ -1,0 +1,27 @@
+@import '~src/styles/_mixins.scss';
+
+.header-outer-container {
+    @include outer-container;
+    position: fixed;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.header-inner-container {
+    @include inner-container;
+    padding-bottom: 1px;
+    .brand {
+        font-weight: 900;
+        font-size: 28px;
+        letter-spacing: 1px;
+        span {
+            color: #bdbdbd;
+        }
+    }
+    .burger {
+        width: 35px;
+        position: absolute;
+        right: 0px;
+        top: 4px;
+    }
+}

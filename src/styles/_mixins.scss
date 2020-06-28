@@ -1,0 +1,15 @@
+@mixin outer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: blue;
+    position: relative;
+}
+
+@mixin inner-container {
+    width: 100%;
+    max-width: 960px;
+    // background-color:pink;
+    position: relative;
+}
