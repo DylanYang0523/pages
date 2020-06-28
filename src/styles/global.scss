@@ -1,0 +1,23 @@
+body {
+    font-family: 'Darker Grotesque', sans-serif !important;
+}
+.global-outer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.global-inner-container {
+    width: 100%;
+    max-width: 960px;
+}
+.progress {
+    height: 6px !important;
+    margin-bottom: 12px !important;
+    border-radius: .5rem !important;
+}
+.progress-bar {
+    letter-spacing: 1px !important;
+    text-align: left !important;
+    padding-left: 8px;
+}
