@@ -21,11 +21,24 @@
             left: 10px;
         }
     }
+    .progress {
+        height: 6px;
+        margin-bottom: 12px;
+        border-radius: .5rem;
+    }
+    .progress-bar {
+        text-align: left;
+        background-color: #6eb4ff;
+        padding-left: 8px;
+    }
     .title {
         font-size: 24px;
         font-weight: 600;
+        margin-top: 30px;
     }
     label {
+        letter-spacing: .5px;
         margin-bottom: 1px;
+        font-size: 17px;
     }
 }
