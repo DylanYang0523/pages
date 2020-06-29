@@ -1,6 +1,12 @@
 import React from 'react';
 import './styles.scss';
-import imgBurger from 'my-images/burger.svg';
+import resume from 'my-files/resume.pdf';
+import globalData from 'my-src/data';
+import data from './data';
+
+const contact = globalData.contact;
+const interests = data.interests;
+const info = data.info;
 
 const AboutSection = () => {
     return (
@@ -8,20 +14,37 @@ const AboutSection = () => {
             <div className="about-inner-container">
                 <h2>About Me</h2>
                 <div className="detail">
-                    Name: Dylan Yang, Age: 29 years, Location: Taipei, Taiwan
+                    Name: <u>{info.name}</u>, &nbsp; Age: <u>{info.age}</u> years, &nbsp; Location: <u>{info.location}</u>
                 </div>
-                <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                <div>
+                    Dear all, my name is Dylan, I am a programmer, a full-stack engineer, with experience coworking with several different teams, and luckily had a little experience in management.
+                    My major is computer science with a bachelor's degree, but if there is a major call volleyball bachelor's degree, I think I could graduate with a double major! 
+                    I really enjoy the time to work with the team which sharing and helping with no second thought but just for the same goal.
+                    <div className="adage">"The strength of the team is each individual member. The strength of each member is the team." — Phil Jackson</div>
+                </div>
                 <br/>
-                <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                <div>
+                    I am a person who fueled by the curious and by the feedbacks. In the beginning, I wrote Android, PHP, and old version fo XCode. 
+                    Then, suddenly I am obsessed with Javascript, just because Javascript can get feedback to me in the quickest way (at least it was in my thought at that time).
+                    But the JS tree is growing so fast, you will find out that more you know then more you don't know and more you need to learn in a humble way.
+                    The JS tree brings me from front-end to back-end, from browser to Docker and so many unknown fields, and it is still growing, unstoppable.
+                    <div className="adage">"I think it’s very important to have a feedback loop, where you’re constantly thinking about what you’ve done and how you could be doing it better." - Elon Musk</div>
+                </div>
                 <br/>
-                <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                <div>
+                    Are you looking for someone to build or grow with the team together? I am a self-motivated person and want to learn and explore the unknown fields with a discovery team.
+                    Let's reach out to
+                    &nbsp;<u><a href={`mailto:${contact.gmail}`}>{contact.gmail}</a></u>&nbsp;
+                    to connect, or know me more on my
+                    &nbsp;<u><a href={contact.linkedin} target="_blank">Linkedin</a></u> / 
+                    &nbsp;<u><a href={contact.github} target="_blank">Github</a></u> / 
+                    &nbsp;<u><a href={contact.facebook} target="_blank">Facebook</a></u> / 
+                    &nbsp;<u><a href={resume} download>Resume</a></u>.
+                </div>
+                <br />
                 <div className="interest">
                     <div>Interests:</div>
-                    <img className="item" src={imgBurger} />
-                    <img className="item" src={imgBurger} />
-                    <img className="item" src={imgBurger} />
-                    <img className="item" src={imgBurger} />
-                    <img className="item" src={imgBurger} />
+                    { interests.map((item) => (<img key={item.name} className="item" src={item.src} />)) }
                 </div>
             </div>
         </section>

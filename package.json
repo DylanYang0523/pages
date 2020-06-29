@@ -18,8 +18,10 @@
     "sass": "^1.26.9"
   },
   "alias": {
+    "my-src": "./src",
     "my-components": "./src/components",
     "my-pages": "./src/pages",
+    "my-files": "./src/assets/files",
     "my-images": "./src/assets/images",
     "my-styles": "./src/styles"
   }

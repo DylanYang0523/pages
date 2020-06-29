@@ -1,6 +1,13 @@
 body {
     font-family: 'Darker Grotesque', sans-serif !important;
 }
+a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        color: inherit;
+    }
+}
 .progress {
     height: 6px !important;
     margin-bottom: 12px !important;

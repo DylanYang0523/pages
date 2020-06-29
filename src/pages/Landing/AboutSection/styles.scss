@@ -6,6 +6,7 @@
 }
 .about-inner-container {
     @include inner-container;
+    font-size: 20px;
     h2 {
         letter-spacing: .5px;
         position: relative;
@@ -26,15 +27,21 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    div {
-        font-size: 20px;
+    .adage {
+        margin-top: 20px;
+        position: relative;
+        font-weight: 900;
+        text-decoration: underline;
+        text-decoration-color: yellow;
+        color: #313131;
+        
     }
     .interest {
         margin-top: 20px;
         font-weight: 600;
         img {
             width: 30px;
-            margin-right: 10px;
+            margin-right: 20px;
             margin-top: 10px;
         }
     }
