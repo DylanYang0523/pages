@@ -25,6 +25,14 @@
         letter-spacing: 1px;
         margin-bottom: 44px;
         position: relative;
+        .greeting {
+            font-weight: 900;
+            font-size: 28px;
+        }
+        .occupations {
+            font-weight: 600;
+            color: #9e9e9e;
+        }
         .desc {
             font-size: 20px;
             margin-top: 30px;
@@ -32,16 +40,33 @@
         .resume {
             font-weight: 900;
             position: absolute;
-            top: 190px;
+            top: 196px;
+            color: #6b6b6b;
             &::after {
                 content: '';
-                border: 2px solid blue;
+                border: 2px solid #d8d8d8;
                 width: 100px;
                 display: block;
                 top: -1px;
                 position: relative;
                 left: 17px;
-            
+            }
+            &:hover {
+                color: #000000;
+            }
+            span {
+                margin-left: 3px;
+                font-size: 14px;
+                text-decoration: underline;
+            }
+        }
+        .social {
+            position: absolute;
+            top: 196px;
+            left: 150px;
+            img {
+                width: 30px;
+                margin-right: 15px;
             }
         }
     }

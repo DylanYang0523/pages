@@ -3,13 +3,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // background-color: blue;
     position: relative;
 }
 
 @mixin inner-container {
     width: 100%;
     max-width: 960px;
-    // background-color:pink;
     position: relative;
+}
+
+@mixin reflection {
+    -webkit-box-reflect: below 2px 
+    -webkit-gradient(linear, left top, left bottom, from(transparent), 
+    color-stop(0.5, transparent), 
+    to(rgba(255, 255, 255, 0.2)));
 }

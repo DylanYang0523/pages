@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
-import resume from 'my-files/resume.pdf';
+import fileResume from 'my-files/resume.pdf';
 import globalData from 'my-src/data';
 import data from './data';
 
@@ -39,7 +39,7 @@ const AboutSection = () => {
                     &nbsp;<u><a href={contact.linkedin} target="_blank">Linkedin</a></u> / 
                     &nbsp;<u><a href={contact.github} target="_blank">Github</a></u> / 
                     &nbsp;<u><a href={contact.facebook} target="_blank">Facebook</a></u> / 
-                    &nbsp;<u><a href={resume} download>Resume</a></u>.
+                    &nbsp;<u><a href={fileResume} download>Resume</a></u>.
                 </div>
                 <br />
                 <div className="interest">
