@@ -1,5 +1,5 @@
 import React from 'react';
-import imgBurger from 'my-images/burger.svg';
+import imgBurger from 'my-images/burger.png';
 import './styles.scss';
 
 const Header = () => {

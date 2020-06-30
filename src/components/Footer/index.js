@@ -1,4 +1,5 @@
 import React from 'react';
+import IconAuthorList from './IconAuthorList';
 import './styles.scss';
 import globalData from 'my-src/data';
 
@@ -9,6 +10,7 @@ const Footer = () => {
         <footer className="global-outer-container contact-outer-container">
             <div className="global-inner-container contact-inner-container">
                 <div className="title">DYLAN <span>WORKSHOP</span></div>
+                <IconAuthorList />
                 <div className="mail">
                     <a href={`mailto:${gmail.src}`}>{gmail.src}</a>
                 </div>
