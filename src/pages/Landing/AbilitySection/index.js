@@ -11,11 +11,11 @@ const AbilitySection = () => {
         return (
             <React.Fragment>
                 <div className="title">{title}</div>
-                { data.map((item) => (
-                    <React.Fragment>
+                { data.map((item, idx) => (
+                    <div key={`ability_${idx}`}>
                         <label>{item.name}</label>
-                        <ProgressBar now={item.score} />
-                    </React.Fragment>
+                        <ProgressBar now={item.score} animated="true" />
+                    </div>
                 )) }
             </React.Fragment>
         )

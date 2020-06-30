@@ -5,11 +5,12 @@
 }
 .experience-inner-container {
     @include inner-container;
+    font-size: 18px;
     h2 {
         letter-spacing: .5px;
         position: relative;
         font-weight: 800;
-        margin-bottom: 20px;
+        margin-bottom: 26px;
         &::after {
             content: "";
             width: 158px;
@@ -21,45 +22,59 @@
             left: 10px;
         }
     }
-    .card-container {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 1fr 1fr;
-    }
-    .card {
-        padding: 2px 10px;
-    }
     .list-container {
         display: grid;
-        grid-gap: 20px 26px;
+        grid-gap: 24px 26px;
         grid-template-columns: 1fr 1fr;
-        .year {
-            font-weight: 600;
-            position: relative;
-            &::after {
-                content: "";
-                border: 1px solid #c7c7c7;
-                width: 80%;
-                display: block;
-                position: absolute;
-                opacity: 0.5;
-                bottom: 9px;
-                z-index: -1;
-                right: 7%;
-            }
+    }
+    .year {
+        font-weight: 600;
+        position: relative;
+        &::after {
+            content: "";
+            border: 1px solid #c7c7c7;
+            width: 70%;
+            display: block;
+            position: absolute;
+            opacity: 0.5;
+            bottom: 11px;
+            z-index: -1;
+            right: 8%;
         }
-        .position {
-            font-weight: 700;
-            color: #ff6d6d;
-            font-size: 16px;
-            img {
-                margin-left: 10px;
-                width: 16px;
-            }
+    }
+    .position {
+        font-weight: 700;
+        color: #ff6d6d;
+        font-size: 18px;
+        img {
+            margin-left: 3px;
+            margin-bottom: 3px;
+            width: 16px;
         }
-        .company {
-            font-weight: 600;
-            color: #bdbdbd;
+    }
+    .desc {
+        font-weight: 600;
+        margin-bottom: 8px;
+        margin-top: 2px;
+    }
+    .unlock {
+        margin-bottom: 3px;
+        img {
+            width: 18px;
+            margin-bottom: 5px;
         }
+    }
+    .tag-list {
+        margin-top: 12px;
+    }
+    .tag {
+        padding: 0px 8px 4px;
+        background-color: #7b91ff;
+        color: white;
+        display: inline-block;
+        margin-right: 5px;
+        margin-bottom: 2px;
+        border-radius: 8px;
+        font-size: 15px;
     }
 }
