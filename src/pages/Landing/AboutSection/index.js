@@ -1,10 +1,11 @@
 import React from 'react';
 import './styles.scss';
-import fileResume from 'my-files/resume.pdf';
 import globalData from 'my-src/data';
 import data from './data';
 
-const contact = globalData.contact;
+const resume = globalData.resume;
+const gmail = globalData.contact.gmail;
+const social = globalData.contact.social;
 const interests = data.interests;
 const info = data.info;
 
@@ -34,12 +35,12 @@ const AboutSection = () => {
                 <div>
                     Are you looking for someone to build or grow with the team together? I am a self-motivated person and want to learn and explore the unknown fields with a discovery team.
                     Let's reach out to
-                    &nbsp;<u><a href={`mailto:${contact.gmail}`}>{contact.gmail}</a></u>&nbsp;
+                    &nbsp;<u><a href={`mailto:${gmail.src}`}>{gmail.src}</a></u>&nbsp;
                     to connect, or know me more on my
-                    &nbsp;<u><a href={contact.linkedin} target="_blank">Linkedin</a></u> / 
-                    &nbsp;<u><a href={contact.github} target="_blank">Github</a></u> / 
-                    &nbsp;<u><a href={contact.facebook} target="_blank">Facebook</a></u> / 
-                    &nbsp;<u><a href={fileResume} download>Resume</a></u>.
+                    &nbsp;<u><a href={social.linkedin.src} target="_blank">Linkedin</a></u> / 
+                    &nbsp;<u><a href={social.github.src} target="_blank">Github</a></u> / 
+                    &nbsp;<u><a href={social.facebook.src} target="_blank">Facebook</a></u> / 
+                    &nbsp;<u><a href={resume.src} download>Resume</a></u>.
                 </div>
                 <br />
                 <div className="interest">

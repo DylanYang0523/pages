@@ -1,13 +1,10 @@
 import React from 'react';
 import './styles.scss';
-import fileResume from 'my-files/resume.pdf';
 import imgProfile from 'my-images/profile.png';
-import imgGithub from 'my-images/github.png';
-import imgFacebook from 'my-images/facebook.png';
-import imgLinkedin from 'my-images/linkedin.png';
 import globalData from 'my-src/data';
 
-const contact = globalData.contact;
+const resume = globalData.resume;
+const social = Object.values(globalData.contact.social);
 const BriefSection = () => {
     return (
         <section className="brief-outer-container">
@@ -21,12 +18,18 @@ const BriefSection = () => {
                             A full-stack engineer from Taiwan with a focus on exploring the world.
                         </div>
                         <div className="resume">
-                            <a href={fileResume} download>RESUME<span>⬇</span></a>
+                            <a href={resume.src} download>RESUME<span>⬇</span></a>
                         </div>
                         <div className="social">
-                            <a href={contact.facebook} target="_blank"><img src={imgFacebook} /></a>
-                            <a href={contact.linkedin} target="_blank"><img src={imgLinkedin} /></a>
-                            <a href={contact.github} target="_blank"><img src={imgGithub} /></a>
+                            {social.map((item, idx) => (
+                                <a 
+                                    href={item.src} 
+                                    target="_blank"
+                                    key={`brief_social_${idx}`}
+                                >
+                                    <img src={item.icon} />
+                                </a>
+                            ))}
                         </div>
                     </div>
                     <div className="square-y" />
