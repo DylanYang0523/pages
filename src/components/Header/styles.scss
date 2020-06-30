@@ -10,6 +10,12 @@
 .header-inner-container {
     @include inner-container;
     padding-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 960px) {
+        box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    }
     .brand {
         font-weight: 900;
         font-size: 28px;
@@ -20,8 +26,5 @@
     }
     .burger {
         width: 35px;
-        position: absolute;
-        right: 0px;
-        top: 4px;
     }
 }

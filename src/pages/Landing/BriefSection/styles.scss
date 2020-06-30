@@ -16,7 +16,8 @@
     }
     .profile-wrapper {
         img {
-            width: 350px;
+            max-width: 350px;
+            width: calc(100vw - 450px);
         }
     }
     .info-wrapper {
@@ -85,5 +86,27 @@
         border: 8px solid rgb(85, 255, 106);
         right: 60px;
         top: 70px;
+    }
+}
+@media (max-width: 860px) {
+    .brief-inner-container {
+        .square-y, .square-g {
+            display: none;
+        }
+    }
+}
+@media (max-width: 699px) {
+    .brief-inner-container {
+        justify-content: center;
+        .profile-wrapper {
+            position: absolute;
+            img {
+                opacity: .1;
+                width: auto;
+            }
+        }
+        .info-wrapper {
+            max-width: 422px;
+        }
     }
 }
