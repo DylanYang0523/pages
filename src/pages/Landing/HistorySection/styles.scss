@@ -1,9 +1,9 @@
 @import '~src/styles/_mixins.scss';
 
-.experience-outer-container {
+.history-outer-container {
     @include outer-container;
 }
-.experience-inner-container {
+.history-inner-container {
     @include inner-container;
     font-size: 18px;
     h2 {
@@ -13,7 +13,7 @@
         margin-bottom: 26px;
         &::after {
             content: "";
-            width: 158px;
+            width: 106px;
             border: 4px solid green;
             display: block;
             position: absolute;

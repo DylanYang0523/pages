@@ -5,7 +5,7 @@ import data from './data';
 import imgIdea from 'my-images/idea.png';
 
 const works = data.works;
-const ExperienceSection = () => {
+const HistorySection = () => {
     const renderWorkList = () => {
         return (
             <div className="list-container">
@@ -37,14 +37,14 @@ const ExperienceSection = () => {
         );
     }
     return (
-        <section className="experience-outer-container">
-            <div className="experience-inner-container">
-                <h2>Experience</h2>
+        <section className="history-outer-container">
+            <div className="history-inner-container">
+                <h2>History</h2>
                 {renderWorkList()}
             </div>
         </section>
     );
 }
 
-export default ExperienceSection;
+export default HistorySection;
 
