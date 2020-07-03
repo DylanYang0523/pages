@@ -11,9 +11,11 @@ const data = {
         { name: 'Git', score: 70 },
         { name: 'GraphQL', score: 50 },
         { name: 'PostgreSQL', score: 60 },
-        { name: 'Scss', score: 80 },
+        { name: 'SCSS', score: 80 },
         { name: 'Docker', score: 40 },
         { name: 'Kubernetes', score: 15 },
+        { name: 'Ruby on Rails', score: 25 },
+        { name: 'Python', score: 15 },
     ],
     others: [
         { name: 'Management', score: 60 },
