@@ -14,7 +14,7 @@ const HistorySection = () => {
             <div className="year">{item.year}</div>
             <div className="position">
               {item.position} @&nbsp;
-              <a href={item.link} target="_blank">
+              <a href={item.link} target="_blank" rel="noreferrer">
                 <u>
                   {item.name}
                   <img src={imgLink} />

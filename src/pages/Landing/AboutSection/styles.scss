@@ -1,48 +1,47 @@
 @import '~src/styles/_mixins.scss';
 
 .about-outer-container {
-    @include outer-container;
-    margin-bottom: 70px;
+  @include outer-container;
+  margin-bottom: 70px;
 }
 .about-inner-container {
-    @include inner-container;
-    font-size: 19px;
-    h2 {
-        letter-spacing: .5px;
-        position: relative;
-        font-weight: 800;
-        &::after {
-            content: "";
-            width: 136px;
-            border: 4px solid blue;
-            display: block;
-            position: absolute;
-            bottom: 3px;
-            opacity: 0.5;
-            left: 10px;
-        }
+  @include inner-container;
+  font-size: 19px;
+  h2 {
+    letter-spacing: 0.5px;
+    position: relative;
+    font-weight: 800;
+    &::after {
+      content: '';
+      width: 136px;
+      border: 4px solid blue;
+      display: block;
+      position: absolute;
+      bottom: 3px;
+      opacity: 0.5;
+      left: 10px;
     }
-    .detail {
-        font-weight: 600;
-        margin-top: 20px;
-        margin-bottom: 20px;
+  }
+  .detail {
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .adage {
+    margin-top: 20px;
+    position: relative;
+    font-weight: 900;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    color: #313131;
+  }
+  .interest {
+    margin-top: 20px;
+    font-weight: 600;
+    img {
+      width: 30px;
+      margin-right: 20px;
+      margin-top: 10px;
     }
-    .adage {
-        margin-top: 20px;
-        position: relative;
-        font-weight: 900;
-        text-decoration: underline;
-        text-decoration-color: yellow;
-        color: #313131;
-        
-    }
-    .interest {
-        margin-top: 20px;
-        font-weight: 600;
-        img {
-            width: 30px;
-            margin-right: 20px;
-            margin-top: 10px;
-        }
-    }
+  }
 }
