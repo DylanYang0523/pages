@@ -1,45 +1,45 @@
 @import '~src/styles/_mixins.scss';
 
 .contact-outer-container {
-    @include outer-container;
+  @include outer-container;
 }
 .contact-inner-container {
-    @include inner-container;
-    .title {
-        letter-spacing: 1px;
-        text-align: center;
-        font-size: 24px;
-        font-weight: 900;
-        border-top: 1px solid #bdbdbd;
-        margin-top: 50px;
-        padding-top: 20px;
-        span {
-            color: #bdbdbd;
-        }
-        &::after {
-            border: 1.5px solid black;
-            content: '';
-            display: block;
-            position: relative;
-            width: 34px;
-            text-align: center;
-            left: 50%;
-            transform: translateX(-50%);
-            margin-top: 14px;
-            margin-bottom: 16px;
-        }
+  @include inner-container;
+  .title {
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    border-top: 1px solid #bdbdbd;
+    margin-top: 50px;
+    padding-top: 20px;
+    span {
+      color: #bdbdbd;
     }
-    .mail {
-        text-align: center;
-        letter-spacing: 1px;
-        text-decoration: underline;
+    &::after {
+      border: 1.5px solid black;
+      content: '';
+      display: block;
+      position: relative;
+      width: 34px;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 14px;
+      margin-bottom: 16px;
     }
-    .social {
-        text-align: center;
-        margin-bottom: 50px;
-        img {
-            width: 30px;
-            margin: 20px 16px 0px 16px;
-        }
+  }
+  .mail {
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: underline;
+  }
+  .social {
+    text-align: center;
+    margin-bottom: 50px;
+    img {
+      width: 30px;
+      margin: 20px 16px 0px 16px;
     }
+  }
 }
