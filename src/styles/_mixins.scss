@@ -1,21 +1,18 @@
 @mixin outer-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 @mixin inner-container {
-    width: 100%;
-    max-width: 960px;
-    position: relative;
-    padding: 0px 14px;
+  width: 100%;
+  max-width: 960px;
+  position: relative;
+  padding: 0px 14px;
 }
 
 @mixin reflection {
-    -webkit-box-reflect: below 2px 
-    -webkit-gradient(linear, left top, left bottom, from(transparent), 
-    color-stop(0.5, transparent), 
-    to(rgba(255, 255, 255, 0.2)));
+  -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(255, 255, 255, 0.2)));
 }
