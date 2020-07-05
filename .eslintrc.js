@@ -40,6 +40,10 @@ module.exports = {
     'import/no-unresolved': [2, { caseSensitive: false }],
   },
   settings: {
+    react: {
+      pragma: 'React',
+      version: 'detect',
+    },
     'import/resolver': {
       parcel: {
         rootDir: 'public',
