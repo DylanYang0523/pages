@@ -1,0 +1,82 @@
+@import '~src/styles/_mixins.scss';
+
+.projects {
+  @include outer-container;
+}
+
+.projects__wrapper {
+  @include inner-container;
+}
+
+.projects__title {
+  letter-spacing: 0.5px;
+  position: relative;
+  font-weight: 800;
+  margin-bottom: 26px;
+  &::after {
+    content: '';
+    width: 123px;
+    border: 4px solid #007eff;
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    opacity: 0.5;
+    left: 10px;
+  }
+}
+
+.projects__cardsWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.projects__card {
+  max-width: 300px;
+  border: 1px solid rgb(174, 174, 174);
+  @media (max-width: 767px) {
+    max-width: none;
+  }
+}
+
+.projects__cardImg {
+  padding: 5px;
+}
+
+.projects__cardTitle {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: rgb(74, 74, 74);
+  margin-bottom: 16px;
+}
+
+.projects__cardBody {
+  border-top: 1px solid rgb(174, 174, 174);
+}
+
+.projects__cardSkills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects__cardSkill {
+  font-size: 14px;
+  background: rgb(255, 120, 143);
+  color: white;
+  border-radius: 4px;
+  padding: 0 8px 2px;
+  margin-right: 4px;
+}
+
+.projects__cardButton {
+  margin-top: 16px;
+  background-color: #04bbc3;
+  border-color: #04bbc3;
+  &:hover {
+    background-color: #34cbd2;
+    border-color: #34cbd2;
+  }
+}

@@ -3,6 +3,7 @@ import BriefSection from './BriefSection';
 import AboutSection from './AboutSection';
 import AbilitySection from './AbilitySection';
 import HistorySection from './HistorySection';
+import ProjectsSection from './ProjectsSection';
 
 const Landing = () => {
   return (
@@ -11,6 +12,7 @@ const Landing = () => {
       <AboutSection />
       <AbilitySection />
       <HistorySection />
+      <ProjectsSection />
     </React.Fragment>
   );
 };

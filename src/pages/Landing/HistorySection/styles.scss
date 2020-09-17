@@ -2,6 +2,7 @@
 
 .history-outer-container {
   @include outer-container;
+  margin-bottom: 70px;
 }
 .history-inner-container {
   @include inner-container;
