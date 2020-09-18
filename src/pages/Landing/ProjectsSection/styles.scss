@@ -32,6 +32,9 @@
   @media (max-width: 767px) {
     grid-template-columns: repeat(2, 1fr);
   }
+  @media (max-width: 549px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .projects__card {
@@ -69,6 +72,7 @@
   border-radius: 4px;
   padding: 0 8px 2px;
   margin-right: 4px;
+  margin-bottom: 4px;
 }
 
 .projects__cardButton {
