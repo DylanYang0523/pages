@@ -2,6 +2,7 @@ import React from 'react';
 import './styles.scss';
 import { Card, Button } from 'react-bootstrap';
 import imgProjectAmazon from 'my-images/project_amazon_clone.png';
+import imgProjectMinesweeper from 'my-images/project_minesweeper.png';
 
 const projects = [
   {
@@ -11,6 +12,13 @@ const projects = [
     skills: ['React', 'Stripe', 'Firebase', 'BEM'],
     desc: `Create an account, and pick some items, then pay with
     the fake credit card! Let's shopping!`,
+  },
+  {
+    img: imgProjectMinesweeper,
+    title: 'Mine Sweeper',
+    link: 'https://minesweeper-dylan.netlify.app/',
+    skills: ['React', 'SASS', 'Fun'],
+    desc: `Enjoy the classic game, try the EXPERT mode to be an expert! - since 1989`,
   },
 ];
 
