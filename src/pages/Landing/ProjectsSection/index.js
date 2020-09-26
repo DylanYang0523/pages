@@ -56,6 +56,7 @@ const ProjectsSection = () => {
                   variant="primary"
                   href={item.link}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Go Demo
                 </Button>
