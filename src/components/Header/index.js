@@ -9,7 +9,7 @@ const Header = () => {
         <div className="brand">
           DYLAN <span>WORKSHOP</span>
         </div>
-        <img className="burger" src={imgBurger} />
+        <img className="burger" src={imgBurger} alt="Menu" />
       </div>
     </div>
   );

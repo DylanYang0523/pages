@@ -10,7 +10,7 @@ const BriefSection = () => {
     <section className="brief-outer-container">
       <div className="brief-inner-container">
         <div className="profile-wrapper">
-          <img src={webpProfile} />
+          <img src={webpProfile} alt="Profile" />
         </div>
         <div className="info-wrapper">
           <div className="layer-top">
@@ -33,7 +33,7 @@ const BriefSection = () => {
                   rel="noreferrer"
                   key={`brief_social_${idx}`}
                 >
-                  <img src={item.icon} />
+                  <img src={item.icon} alt="Social Icons" />
                 </a>
               ))}
             </div>

@@ -86,7 +86,12 @@ const AboutSection = () => {
         <div className="interest">
           <div>Interests:</div>
           {interests.map((item) => (
-            <img key={item.name} className="item" src={item.src} />
+            <img
+              key={item.name}
+              className="item"
+              src={item.src}
+              alt="Interests"
+            />
           ))}
         </div>
       </div>

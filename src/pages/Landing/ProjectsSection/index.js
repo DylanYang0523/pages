@@ -34,6 +34,7 @@ const ProjectsSection = () => {
                 className="projects__cardImg"
                 variant="top"
                 src={item.webp}
+                alt="Project Screenshot"
               />
               <Card.Body className="projects__cardBody">
                 <Card.Title className="projects__cardTitle">

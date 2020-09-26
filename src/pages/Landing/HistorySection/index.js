@@ -17,7 +17,7 @@ const HistorySection = () => {
               <a href={item.link} target="_blank" rel="noreferrer">
                 <u>
                   {item.name}
-                  <img src={imgLink} />
+                  <img src={imgLink} alt="Link To Website" />
                 </u>
               </a>
             </div>
@@ -25,7 +25,7 @@ const HistorySection = () => {
             <div>
               {item.highlights.map((highlight, idx) => (
                 <div key={`exp_${itemIdx}_highlight_${idx}`} className="unlock">
-                  <img src={imgIdea} /> {highlight}
+                  <img src={imgIdea} alt="Key Point" /> {highlight}
                   <br />
                 </div>
               ))}
