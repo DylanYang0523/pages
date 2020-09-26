@@ -1,12 +1,12 @@
 import React from 'react';
 import './styles.scss';
 import { Card, Button } from 'react-bootstrap';
-import imgProjectAmazon from 'my-images/project_amazon_clone.png';
-import imgProjectMinesweeper from 'my-images/project_minesweeper.png';
+import webpProjectAmazon from 'my-images/project_amazon_clone.webp';
+import webpProjectMinesweeper from 'my-images/project_minesweeper.webp';
 
 const projects = [
   {
-    img: imgProjectAmazon,
+    webp: webpProjectAmazon,
     title: 'Amazon Clone',
     link: 'https://clone-8ab73.web.app/',
     skills: ['React', 'Stripe', 'Firebase', 'BEM'],
@@ -14,7 +14,7 @@ const projects = [
     the fake credit card! Let's shopping!`,
   },
   {
-    img: imgProjectMinesweeper,
+    webp: webpProjectMinesweeper,
     title: 'Mine Sweeper',
     link: 'https://minesweeper-dylan.netlify.app/',
     skills: ['React', 'SASS', 'Fun'],
@@ -33,7 +33,7 @@ const ProjectsSection = () => {
               <Card.Img
                 className="projects__cardImg"
                 variant="top"
-                src={item.img}
+                src={item.webp}
               />
               <Card.Body className="projects__cardBody">
                 <Card.Title className="projects__cardTitle">

@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
-import imgProfile from 'my-images/profile.png';
+import webpProfile from 'my-images/profile.webp';
 import globalData from 'my-src/data';
 
 const { resume } = globalData;
@@ -10,7 +10,7 @@ const BriefSection = () => {
     <section className="brief-outer-container">
       <div className="brief-inner-container">
         <div className="profile-wrapper">
-          <img src={imgProfile} />
+          <img src={webpProfile} />
         </div>
         <div className="info-wrapper">
           <div className="layer-top">
