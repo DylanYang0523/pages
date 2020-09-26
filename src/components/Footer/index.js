@@ -24,7 +24,7 @@ const Footer = () => {
               rel="noreferrer"
               key={`footer_social_${idx}`}
             >
-              <img src={item.icon} alt="Social Icons" />
+              <img aria-label={item.name} src={item.icon} alt="Social Icons" />
             </a>
           ))}
         </div>

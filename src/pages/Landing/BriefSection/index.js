@@ -33,7 +33,11 @@ const BriefSection = () => {
                   rel="noreferrer"
                   key={`brief_social_${idx}`}
                 >
-                  <img src={item.icon} alt="Social Icons" />
+                  <img
+                    aria-label={item.name}
+                    src={item.icon}
+                    alt="Social Icons"
+                  />
                 </a>
               ))}
             </div>

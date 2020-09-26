@@ -14,14 +14,17 @@ const data = {
     },
     social: {
       facebook: {
+        name: 'facebook',
         src: 'https://www.facebook.com/people/Yang-Dylan/100000241554454',
         icon: imgFacebook,
       },
       linkedin: {
+        name: 'linkedin',
         src: 'https://www.linkedin.com/in/dylan-yang-0b5536105/',
         icon: imgLinkedin,
       },
       github: {
+        name: 'github',
         src: 'https://github.com/DylanYang0523',
         icon: imgGithub,
       },
