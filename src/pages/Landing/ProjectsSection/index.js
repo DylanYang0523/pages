@@ -3,8 +3,16 @@ import './styles.scss';
 import { Card, Button } from 'react-bootstrap';
 import webpProjectAmazon from 'my-images/project_amazon_clone.webp';
 import webpProjectMinesweeper from 'my-images/project_minesweeper.webp';
+import webpProjectCovid19Tracker from 'my-images/project_covid19_tracker.webp';
 
 const projects = [
+  {
+    webp: webpProjectCovid19Tracker,
+    title: 'COVID 19 Tracker',
+    link: 'https://covid-19-tracker-af91a.web.app/',
+    skills: ['React', 'react-leaflet', 'material-ui', 'Firebase'],
+    desc: `There is no doubt that we are currently living in unprecedented times. There is Always Hope. Taiwan can help.`,
+  },
   {
     webp: webpProjectAmazon,
     title: 'Amazon Clone',
