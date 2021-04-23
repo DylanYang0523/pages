@@ -7,7 +7,7 @@ import imgHiking from 'my-images/hiking.png';
 const data = {
   info: {
     name: 'Dylan Yang',
-    age: 29,
+    age: 30,
     location: 'Taipei, Taiwan',
   },
   interests: [
